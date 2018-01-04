@@ -11,4 +11,4 @@ zuul:
   routes:
     api-a:
       path: /epass-api/**
-      serviceId: service-feign
+      serviceId: epass-2c-feign
