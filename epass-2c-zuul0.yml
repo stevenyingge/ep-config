@@ -1,0 +1,14 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8081
+spring:
+  application:
+    name: epass-2c-zuul
+zuul:
+  routes:
+    api-a:
+      path: /epass-api/**
+      serviceId: service-feign
